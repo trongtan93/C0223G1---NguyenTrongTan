@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>signup_student</title>
+</head>
+<style>
+    body {
+        background-color: antiquewhite;
+    }
+</style>
+<body>
+<form name="signup_user" action="hobby.html" method="post">
+    
+    <fieldset style="border:1px solid black; width: 400px">
+    <legend>SIGN UP</legend>
+    <p>Fullname: <label><input style="margin-left: 25px;" name="fullname" type="text" placeholder="Nguyen Van A" size="25"> </label></p>
+    <p>Birthday: <label><input style="margin-left: 30px;" name="birthday" type="text" placeholder="01/01/1993" size="25"> </label></p>
+
+    <p>Sex: <label><input style="margin-left: 60px;" name="sex" type="radio">male</label>
+            <label><input name="sex" type="radio">female</label></p>
+    <p> Address: <label><input style="height: 100px; width: 210px; margin-left: 30px" name="address" type="text" ></label></p>
+
+    <p> Class: <select style="margin-left: 45px">
+        <option>--Choose class--</option>
+        <option>C0123G1</option>
+        <option>C0223G1</option>
+    </select></p>
+
+    <p>Email: <label><input style="margin-left: 40px" name="email" type="text" placeholder="abc@gmail.com" size="25"></label></p>
+    <p>Phone: <label><input style="margin-left: 40px" name="phone" type="text" size="25"></label></p>
+
+    <label><input style="margin-left: 90px" value="submit" type="submit">
+    <input type="reset" value="reset"></label>
+
+    </fieldset>
+</form>
+</body>
+</html>
