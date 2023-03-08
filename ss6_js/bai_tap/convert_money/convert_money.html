@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>convert_money</title>
+</head>
+<body>
+<form name="convert" method="get">
+    <table>
+        <tr>
+            <th>Amount &emsp;</th>
+            <th>From Currency &emsp;</th>
+            <th>To Currency</th>
+        </tr>
+
+        <tr>
+            <td><input id="amount" type="text" size="10"> &emsp; </td>
+            <td>
+                <select id="from_currency">
+                    <option value="VND">VND</option>
+                    <option value="AUD">AUD</option>
+                </select>
+                &emsp;
+            </td>
+
+            <td>
+                <select id="to_currency">
+                    <option value="AUD">AUD</option>
+                    <option value="VND">VND</option>
+                </select>
+                &emsp;
+            </td>
+
+            <td>
+                <button type="button" onclick="convert_money()">convert</button>
+            </td>
+        </tr>
+    </table>
+</form>
+<p id="resault">resault</p>
+
+</body>
+</html>
+
+<script src="convert_money.js"></script>
+
+
