@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lession_11</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let income = prompt("Enter your income (milions VND): ")
+
+    if (income > 80) {
+        document.write("personal income tax: " + (0.35*income - 9.85)*1000000 + " VND")
+    } else if (income >= 52) {
+        document.write("personal income tax: " + (0.3*income - 5.85)*1000000 + " VND")
+    } else if (income >= 32) {
+        document.write("personal income tax: " + (0.25*income - 3.25)*1000000 + " VND")
+    } else if (income >= 18) {
+        document.write("personal income tax: " + (0.2*income - 1.65)*1000000 + " VND")
+    } else if (income >= 10) {
+        document.write("personal income tax: " + (0.15*income - 0.75)*1000000 + " VND")
+    } else if (income >= 5) {
+        document.write("personal income tax: " + (0.1*income - 0.25)*1000000 + " VND")
+    } else {
+        document.write("personal income tax: " + 0.05*income*1000000 + " VND")
+    }
+</script>

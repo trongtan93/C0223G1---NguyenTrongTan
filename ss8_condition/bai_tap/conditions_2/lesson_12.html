@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson_12</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let principle = prompt("Enter your principle balance (VND): ")
+    let rate = prompt("Enter your interest rate (%): ")
+    let bowrrow_time = prompt("Enter your borrowed time (month): ")
+    let interest = (principle * (rate/100))/bowrrow_time
+    let principle_per_month = principle / bowrrow_time
+    let pay_month = interest + principle_per_month
+
+    document.write(" Your need pay " + pay_month + " VND per month")
+
+</script>
