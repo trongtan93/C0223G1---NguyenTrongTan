@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lession_1</title>
+</head>
+<body>
+<p>Enter value a</p>
+<input id = "a" type="text" size="25">
+
+<p>Enter value b</p>
+<input id = "b" type="text" size="25"><br><br>
+
+
+<button onclick="check_div()">check</button>
+
+<p id = "check">result: </p>
+
+</body>
+</html>
+<script>
+    function check_div() {
+
+        let a = document.getElementById("a").value
+        let b = document.getElementById("b").value
+        let result = a % b;
+
+        if (result == 0)
+            result = " a evenly divisible b"
+        else
+            result = "a not evenly divisible b, remainder is: " + result
+
+        document.getElementById("check").innerHTML = result
+    }
+</script>

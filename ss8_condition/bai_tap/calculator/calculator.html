@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calculator</title>
+</head>
+<body>
+<form name = "cal">
+    <input id = "enter_value" type="text" name = "in_val" style="height: 50px; width: 300px"><br><br>
+    <input id = "num_1" type="button" style="height: 50px; width: 62px" onclick="cal.in_val.value +='1'" value="1">
+    <input id = "num_2" type="button" style="height: 50px; width: 62px; margin-left: 15px" onclick="cal.in_val.value +='2'" value="2">
+    <input id = "num_3" type="button" style="height: 50px; width: 62px; margin-left: 15px" onclick="cal.in_val.value +='3'" value="3">
+    <input id = "add" type="button" style="height: 50px; width: 62px; margin-left: 15px" onclick="cal.in_val.value +='+'" value="+"><br><br>
+
+    <input id = "num_4" type="button" style="height: 50px; width: 62px" onclick="cal.in_val.value +='4'" value="4">
+    <input id = "num_5" type="button" style="height: 50px; width: 62px; margin-left: 15px" onclick="cal.in_val.value +='5'" value="5">
+    <input id = "num_6" type="button" style="height: 50px; width: 62px; margin-left: 15px" onclick="cal.in_val.value +='6'" value="6">
+    <input id = "apart" type="button" style="height: 50px; width: 62px; margin-left: 15px" onclick="cal.in_val.value +='-'" value="-"><br><br>
+
+    <input id = "num_7" type="button" style="height: 50px; width: 62px" onclick="cal.in_val.value +='7'" value="1">
+    <input id = "num_8" type="button" style="height: 50px; width: 62px; margin-left: 15px" onclick="cal.in_val.value +='8'" value="8">
+    <input id = "num_9" type="button" style="height: 50px; width: 62px; margin-left: 15px" onclick="cal.in_val.value +='9'" value="9">
+    <input id = "core" type="button" style="height: 50px; width: 62px; margin-left: 15px" onclick="cal.in_val.value +='*'" value="x"><br><br>
+
+    <input id = "num_C" type="button" style="height: 50px; width: 62px" onclick="cal.in_val.value = ' ' " value="C">
+    <input id = "num_0" type="button" style="height: 50px; width: 62px; margin-left: 15px" onclick="cal.in_val.value +='0'" value="0">
+    <input id = "num_same" type="button" style="height: 50px; width: 62px; margin-left: 15px" onclick="cal.in_val.value = eval(cal.in_val.value) " value="=">
+    <input id = "devide" type="button" style="height: 50px; width: 62px; margin-left: 15px" onclick="cal.in_val.value +='/'" value="/"><br><br>
+
+</form>
+</body>
+</html>

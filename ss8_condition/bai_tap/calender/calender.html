@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calender</title>
+</head>
+<body>
+<input id = "value_1" type="number" min="1" max="12" placeholder="Enter month" size="25">
+
+<button onclick="calendar()">Month</button>
+<p id = "result">The number of days in month is: </p>
+
+</body>
+</html>
+<script>
+    function calendar() {
+        let num_days = document.getElementById("value_1").value
+        let month_1 = "1"
+        let month_2 = "2"
+        let month_3 = "3"
+        let month_4 = "4"
+        let month_5 = "5"
+        let month_6 = "6"
+        let month_7 = "7"
+        let month_8 = "8"
+        let month_9 = "9"
+        let month_10 = "10"
+        let month_11 = "11"
+        let month_12 = "12"
+
+        switch (num_days) {
+            case month_1:
+            case month_3:
+            case month_5:
+            case month_7:
+            case month_8:
+            case month_11:
+            case month_12:
+                document.getElementById("result").innerHTML = "31 days"
+                break
+
+            case month_4:
+            case month_6:
+            case month_9:
+            case month_10:
+                document.getElementById("result").innerHTML = "30 days"
+                break
+
+            case month_2:
+                document.getElementById("result").innerHTML = "28 days or 29 days"
+                break
+
+            default:
+                document.getElementById("result").innerHTML = "retype"
+
+        }
+    }
+</script>

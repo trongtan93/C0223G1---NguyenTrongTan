@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson5</title>
+
+</head>
+<body>
+<p>Enter score test</p>
+<input id="score_test" type="text" size="15">
+
+<p>Enter score mid-term</p>
+<input id="score_midterm" type="text" size="15">
+
+<p>Enter score end-term</p>
+<input id="score_end" type="text" size="15">
+<br>
+
+<button style="margin-top: 10px" onclick="score()">Enter</button>
+
+<p id="result"></p>
+
+
+</body>
+</html>
+<script>
+    function score() {
+        let score_test = + document.getElementById("score_test").value
+        let score_midterm = + document.getElementById("score_midterm").value
+        let score_end = + document.getElementById("score_end").value
+        let average_score = (score_test + score_midterm*2 + score_end*3)/6;
+        let result = ""
+
+        if (average_score > 8.5) {
+            result = "This is intelligent student with average score is: " + average_score
+        } else if (average_score > 7) {
+            result = "This is good student with average score is: " + average_score
+        } else if (average_score > 5) {
+            result = "This is low student with average score is: " + average_score
+        } else {
+            result = "This is very bad student with average score is: " + average_score
+        }
+
+        document.getElementById("result").innerHTML = result
+    }
+</script>

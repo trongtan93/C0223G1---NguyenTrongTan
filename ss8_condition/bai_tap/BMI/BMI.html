@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI</title>
+
+</head>
+<body>
+<p>Enter your weight(kg)</p>
+<input id="weight" type="text" size="15">
+
+<p>Enter your height(m)</p>
+<input id="height" type="text" size="15">
+<br>
+
+<button style="margin-top: 10px" " onclick="BMI()">Enter</button>
+
+<p id="result"></p>
+
+
+</body>
+</html>
+<script>
+    function BMI() {
+        let weight = document.getElementById("weight").value
+        let height = document.getElementById("height").value
+        let bmi = weight/(Math.pow(height,2))
+        let result = "";
+
+        if (bmi >= 30)
+            result = "Your BMI is: " + bmi + " . Your is Obese";
+        else if (bmi >= 25)
+            result = "Your BMI is: " + bmi + " . Your is Overweight";
+        else if ( bmi >= 18.5)
+            result = "Your BMI is: " + bmi + " . Your is Normal";
+        else
+            result = "Your BMI is: " + bmi + " . Your is Underweight";
+
+        document.getElementById("result").innerHTML = result
+    }
+</script>
