@@ -2,9 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>temperature</title>
 </head>
 <body>
-$END$
+
 </body>
 </html>
+<script>
+    let temperature = +prompt("Enter temperature present:  ");
+
+    while ((temperature < 0) || (temperature > 100)) {
+        if (temperature < 0) {
+            alert("need increased temperature")
+            temperature = +prompt("Enter temperature present:  ")
+        } else {
+            alert("need temperature decrease")
+            temperature = +prompt("Enter temperature present:  ")
+        }
+        alert("normal temperature")
+    }
+</script>
