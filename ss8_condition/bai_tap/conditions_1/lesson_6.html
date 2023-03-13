@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>lesson6</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson6</title>
 
 </head>
 <body>
@@ -19,18 +26,21 @@
 </html>
 <script>
     function bonus() {
-        let sales = + document.getElementById("sales").value
-        let bonus = ""
+        let sales = +document.getElementById("sales").value;
+        let bonus = "";
 
         if (sales < 10) {
-            bonus = "Your bonus will receive (2%): " + (sales * 2)/100 + " milions VND"
+            bonus = "Your bonus will receive (2%): " + (sales * 2) / 100 + " milions VND";
         } else if (sales < 20) {
-            bonus = "Your bonus will receive (5%): " + (sales * 5)/100 + " milions VND"
+            bonus = "Your bonus will receive (5%): " + (sales * 5) / 100 + " milions VND";
         } else if (sales < 100) {
-            bonus = "Your bonus will receive (8%): " + (sales * 8)/100 + " milions VND"
+            bonus = "Your bonus will receive (8%): " + (sales * 8) / 100 + " milions VND";
         } else {
-            bonus = "Your bonus will receive (10%): " + (sales * 10)/100 + "milions VND"
+            bonus = "Your bonus will receive (10%): " + (sales * 10) / 100 + "milions VND";
         }
-        document.getElementById("result").innerHTML = bonus
+        document.getElementById("result").innerHTML = bonus;
     }
 </script>
+
+</body>
+</html>

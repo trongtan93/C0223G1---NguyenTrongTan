@@ -10,9 +10,14 @@
 </body>
 </html>
 <script>
-    let kwh_electronic = prompt("Enter your kwh electronics (kwh): ")
-    let money_per_kw = prompt("What is the cost of electricity per kwh(VND): ")
-    let money_pay = kwh_electronic * money_per_kw
+    let kwh_electronic = prompt("Enter your kwh electronics (kwh): ");
 
-    document.write(money_pay + " VND")
+    if (kwh_electronic > 100) {
+        document.write("money pay " + 2927 * kwh_electronic + " VND");
+    } else if (kwh_electronic > 50) {
+        document.write("money pay " + 1734 * kwh_electronic + " VND");
+    } else {
+        document.write("money pay " + 1678 * kwh_electronic + " VND");
+    }
+    
 </script>

@@ -6,30 +6,30 @@
 </head>
 <body>
 <p>Enter value a</p>
-<input id = "a" type="text" size="25">
+<input id="a" type="text" size="25">
 
 <p>Enter value b</p>
-<input id = "b" type="text" size="25"><br><br>
+<input id="b" type="text" size="25"><br><br>
 
 
-<button onclick="check_div()">check</button>
+<button onclick="check_Div()iv()">check</button>
 
-<p id = "check">result: </p>
+<p id="check">result: </p>
 
 </body>
 </html>
 <script>
-    function check_div() {
+    function check_Div() {
 
-        let a = document.getElementById("a").value
-        let b = document.getElementById("b").value
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
         let result = a % b;
 
-        if (result == 0)
-            result = " a evenly divisible b"
-        else
-            result = "a not evenly divisible b, remainder is: " + result
-
+        if (result == 0) {
+            result = " a evenly divisible b";
+        } else {
+            result = "a not evenly divisible b, remainder is: " + result;
+        }
         document.getElementById("check").innerHTML = result
     }
 </script>

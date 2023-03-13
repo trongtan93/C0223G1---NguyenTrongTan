@@ -9,20 +9,20 @@
 </body>
 </html>
 <script>
-    let a = prompt("Enter value a: ")
-    let b = prompt("Enter value b: ")
-    let c = prompt("Enter value c: ")
-    let delta = Math.pow(b,2) - (4 * a * c)
-    let result = ""
+    let a = prompt("Enter value a: ");
+    let b = prompt("Enter value b: ");
+    let c = prompt("Enter value c: ");
+    let delta = Math.pow(b, 2) - (4 * a * c);
+    let result = "";
 
     if (delta < 0) {
-        result = "Indeterminate equation"
+        result = "Indeterminate equation";
     } else if (delta = 0) {
-        result = "X1 = " + -b / (2 * a) + " = " + -b / (2 * a)
+        result = "X1 = " + -b / (2 * a) + " = " + -b / (2 * a);
     } else {
-        result = "X1 = " + ((-b + Math.sqrt(delta))/(2*a)) + " X2 = " + ((-b - Math.sqrt(delta))/(2*a))
+        result = "X1 = " + ((-b + Math.sqrt(delta)) / (2 * a)) + " X2 = " + ((-b - Math.sqrt(delta)) / (2 * a));
     }
 
-    document.write(result)
+    document.write(result);
 
 </script>

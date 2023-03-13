@@ -6,25 +6,25 @@
 </head>
 <body>
 <p>Enter age of student</p>
-<input id = "age" type="text" size="25">
+<input id="age" type="text" size="25">
 
 <button onclick="age_student()">check</button>
 
-<p id = "check">result: </p>
+<p id="check">result: </p>
 
 </body>
 </html>
 <script>
     function age_student() {
 
-        let age = document.getElementById("age").value
+        let age = document.getElementById("age").value;
         let result = "";
 
-        if (age >= 16)
-            result = " This student can learn class 10."
-        else
-            result = "This student is not old enough learn class 10"
-
-        document.getElementById("check").innerHTML = result
+        if (age >= 16) {
+            result = " This student can learn class 10.";
+        } else {
+            result = "This student is not old enough learn class 10";
+        }
+        document.getElementById("check").innerHTML = result;
     }
 </script>

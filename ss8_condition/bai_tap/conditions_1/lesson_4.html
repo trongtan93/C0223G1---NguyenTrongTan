@@ -10,7 +10,7 @@
 <input id="num_a" type="number" size="15">
 
 <p>Enter value b</p>
-<input id="num_b" type= "number" size="15">
+<input id="num_b" type="number" size="15">
 
 <p>Enter value c</p>
 <input id="num_c" type=" number " size="15">
@@ -25,23 +25,23 @@
 </html>
 <script>
     function findMax() {
-        let num_a =  + document.getElementById("num_a").value
-        let num_b =  + document.getElementById("num_b").value
-        let num_c =  + document.getElementById("num_c").value
+        let num_a = +document.getElementById("num_a").value;
+        let num_b = +document.getElementById("num_b").value;
+        let num_c = +document.getElementById("num_c").value;
         let result = "";
 
         if (num_a > num_b) {
-            if (num_a > num_c){
-                result = "max value is: " + num_a
-            } else{
-                result = "max value is: " + num_c
+            if (num_a > num_c) {
+                result = "max value is: " + num_a;
+            } else {
+                result = "max value is: " + num_c;
             }
         } else {
             if (num_b > num_c)
-                result = "max value is: " + num_b
+                result = "max value is: " + num_b;
             else
-                result = "max value is: " + num_c
+                result = "max value is: " + num_c;
         }
-        document.getElementById("result").innerHTML = result
+        document.getElementById("result").innerHTML = result;
     }
 </script>
