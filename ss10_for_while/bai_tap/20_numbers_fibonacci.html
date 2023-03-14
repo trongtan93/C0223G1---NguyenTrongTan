@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>20 numbers fibonacci</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+        let num1 = 0;
+        let num2 = 1;
+        document.write(num1 + "<br>" + num2 + "<br>");
+
+        for (let i = 1; i < 19; i++) {
+            let numN = num1 + num2;
+            num1 = num2;
+            num2 = numN;
+            document.write(numN + "<br>");
+        }
+</script>
