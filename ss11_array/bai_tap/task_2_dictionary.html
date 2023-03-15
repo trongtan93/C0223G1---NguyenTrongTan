@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dictionary</title>
+</head>
+<body>
+<h3>DICTIONARY</h3>
+<p>search english word</p>
+<input id="english" type="text" size="25">
+<button onclick="dictionary()">translate</button>
+<p id="result">result</p>
+</body>
+</html>
+<script>
+
+    function dictionary() {
+        let english = document.getElementById("english").value;
+        let array_english = ["hello", "table", "pen", "mobile"];
+        let array_viet = ["xin chao", "ban", "but", "dien thoai"]
+        let x = 0;
+        let result = "";
+
+        for (let i = 0; i < array_english.length; i++) {
+            if (english == array_english[i]) {
+                x = i;
+                for (let j = 0; j < array_viet.length; j++) {
+                    if (j == x)
+                    result = array_viet[j]
+                }
+            }
+        }
+        document.getElementById("result").innerHTML = result
+    }
+
+</script>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>insert dashes</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    const myNumber = prompt("Enter your number: ");
+    const str = myNumber.toString();
+    const myArray = str.split("");
+
+    for (let i = 0; i < myArray.length; i++) {
+        if ((myArray[i] % 2 == 0) && (myArray[i-1] % 2 == 0)){
+            document.write('-', str[i]  );
+        } else {
+            document.write(str[i]);
+        }
+    }
+    console.log(myArray)
+
+
+
+
+</script>
