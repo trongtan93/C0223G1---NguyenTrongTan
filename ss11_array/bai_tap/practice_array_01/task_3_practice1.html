@@ -9,13 +9,23 @@
 </body>
 </html>
 <script>
-    let widthEle = +prompt("Enter number elements in array: ")
-    let list = []
-    let ele = ""
+    let widthEle = +prompt("Enter number of elements in array: ");
+    let list = [];
+    let ele = "";
 
     for (let i = 0; i < widthEle; i++) {
-        ele = +prompt("Enter element: ")
+        ele = +prompt("Enter elements: ");
+        list.push(ele);
     }
-    list.push(ele)
-    document.write(list)
+
+    let max = list[0];
+    let sum = 0;
+    for (let j = 0; j < list.length; j++) {
+        if (max <= list[j]) {
+            max = list[j];
+            sum += list[j];
+        }
+    }
+    document.write("The largest element is: " + max + " average element is: " + (sum / (list.length)));
+
 </script>

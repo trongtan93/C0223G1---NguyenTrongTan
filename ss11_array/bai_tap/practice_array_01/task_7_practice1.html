@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task7</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let arr = ["1", "10", "15", "20", "25", "30", "35", "40", "45", "50"];
+    let integerV = prompt("Enter nagative integer: ");
+
+    for (let i = 0; i < 10; i++) {
+        if (integerV == arr[i]) {
+            arr.splice(i,1)
+            document.write(arr + "<br>")
+        }
+    }
+    document.write("originial array is: " + arr)
+
+</script>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task5</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let widthArr = +prompt("Enter elements of array: ");
+    let ele = "";
+    let list = [];
+    let sum = 0;
+
+    for (let i = 0; i < widthArr; i++) {
+        ele = +prompt("Enter elements: ");
+        list.push(ele);
+        if (ele < 0) {
+            sum++;
+        }
+    }
+    document.write("Your list is : " + list + "<br>");
+    document.write("This list have: " + sum + " nagative integer");
+
+</script>
