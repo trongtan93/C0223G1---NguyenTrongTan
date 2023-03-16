@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task6</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let numE = prompt("Enter numbers elements of array: ");
+    let arr = [];
+    for (let i = 0; i < numE; i++) {
+        let ele = prompt("Enter element: ");
+        arr.push(ele);
+        if (arr[i] == "-") {
+            arr[i] = "_";
+        }
+    }
+    document.write(arr);
+
+</script>

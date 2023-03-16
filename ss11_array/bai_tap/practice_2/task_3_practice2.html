@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task3</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let arr = ["c", 1, 2, 3, "e"];
+    let count = 0;
+    let lengthArr = arr.length;
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i]<=9 || arr[i] > 0) {
+            count ++;
+        }
+    }
+
+    document.write("array = " + arr.toString() + "<br>");
+    document.write("lenght array = " + lengthArr + "<br>");
+    document.write("Array have: " + count + " numbers " + "<br>");
+
+</script>

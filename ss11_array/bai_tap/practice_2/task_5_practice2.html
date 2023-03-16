@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task5</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+
+    let person1 = prompt("what do you says: ");
+    let person2 = prompt("what do you says: ");
+    let arr1 = person1.split(" ");
+    let arr2 = person2.split(" ");
+    let result = "";
+
+    if (person1.length == person2.length) {
+        result = "You two sound so much alike";
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i] == arr2[i]) {
+                result = "You two sound so much alike";
+            } else {
+                result = "You two sound not same";
+            }
+        }
+    } else {
+        result = "You two sound not same";
+    }
+    document.write(result);
+</script>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task9</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let arrA = []
+    for (let i = 0; i < 10; i++) {
+        let eleA = prompt("Enter element of array A: ");
+        arrA.push(eleA);
+    }
+
+    let arrB = []
+    for (let i = 0; i < 10; i++) {
+        let eleB = prompt("Enter element of array B: ");
+        arrB.push(eleB);
+    }
+
+    let arrC = arrA.concat(arrB);
+
+    document.write("Array A is: " + arrA + "<br>");
+    document.write("Array B is: " + arrB + "<br>");
+    document.write("Array C is: " + arrC + "<br>");
+
+</script>
