@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task 3 lesson 2</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function inputvalue() {
+        let valueinput = +prompt("Enter value input: ");
+        document.write(factorial(valueinput));
+    }
+
+    function factorial(n) {
+        if (n == 2) {
+            resultvalue = 2;
+        } else {
+            resultvalue = n * (n - 1);
+        }
+        return resultvalue;
+    }
+
+    inputvalue()
+</script>

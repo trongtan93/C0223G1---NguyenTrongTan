@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task5</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let intA = +prompt("Enter integer a: ");
+    let intB = +prompt("Enter integer b: ");
+    let intC = +prompt("Enter integer c: ");
+    let arr = [intA, intB, intC];
+
+    function min(a, b, c) {
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[0] < arr[i]) {
+                alert(intA);
+            } else {
+                if (arr[i] < arr[arr.length - 1]) {
+                    alert(arr[i]);
+                } else {
+                    alert(arr[arr.length - 1]);
+                }
+            }
+        }
+    }
+
+    min(intA, intB, intC);
+</script>
