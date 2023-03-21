@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task5</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let starInput = prompt("Enter your star want to find: ");
+    let arrA = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arrB = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let count = 0;
+    starA(starInput);
+
+    function starA(star) {
+        for (let i = 0; i < arrA.length; i++) {
+            if (star == arrA[i]) {
+                alert(arrB[i])
+                count++
+            }
+        }
+        if (count === 0) {
+            alert("Don't find your star")
+        }
+    }
+
+</script>
