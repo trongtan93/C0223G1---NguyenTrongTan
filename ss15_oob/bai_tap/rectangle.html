@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rectangle</title>
+</head>
+<body>
+<canvas id = "myCanvas" width="350px" height="250px" style="border: 1px solid #000000;"></canvas>
+<p id = "result"></p>
+</body>
+</html>
+<script>
+    class rectangle {
+        constructor(lenght, width) {
+            this.lenght = lenght;
+            this.width = width;
+        }
+        area() {
+            return this.lenght * this.width;
+        }
+        peremeter() {
+            return (this.lenght + this.width) * 2
+        }
+    }
+
+    let inputlenghth = +prompt("Enter value lenghth of rectangle: ");
+    let inputwidth = +prompt("Enter value width of rectangle: ");
+    let rectangleA = new rectangle(inputlenghth, inputwidth);
+
+    document.getElementById("result").innerHTML = "area of rectangle is: " + rectangleA.area() + "<br>" + "peremeter of rectangle is: " + rectangleA.peremeter() + "<br>"
+
+</script>
