@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="menu"></p>
+<p id="price"></p>
+<button onclick="chooseDrinks()">Chọn Đồ Uống</button>
+</body>
+</html>
+<script>
+    let menuDrinks = ["Cafe", "Cam vắt", "Nước ép cà rốt", "Nước ép cà chua", "Nước lọc", "Nước dừa", "Thoát"];
+
+    function displayDrinks() {
+        let tableString = "<table border='1' cellspacing='0' >" +
+            "<tr>" +
+            "<th>STT</th>" +
+            "<th>Tên Đồ Uống</th>" +
+            "</tr>"
+        for (let i = 0; i < menuDrinks.length; i++) {
+            tableString += "<tr>" +
+                "<td>" + (i + 1) + "</td>" +
+                "<td>" + menuDrinks[i] + "</td>" +
+                "</tr>"
+        }
+        tableString += "</table>"
+        document.getElementById("menu").innerHTML = tableString;
+    }
+
+    displayDrinks();
+
+    function chooseDrinks() {
+        let index = +prompt("Nhập vào số bạn muốn chọn");
+        let quantity;
+        let sum = 0;
+        do {
+            switch (index) {
+                case 1:
+                    alert("Đơn giá: 14.000đ");
+                    quantity = +prompt("Nhập số lượng:");
+                    sum = sum + quantity * 14000;
+                    alert("Thành tiền: " + sum);
+                    break;
+                case 2:
+                    alert("Đơn giá: 24.000đ");
+                    quantity = +prompt("Nhập số lượng:");
+                    sum = sum + quantity * 24000;
+                    alert("Thành tiền: " + sum);
+                    break;
+                case 3:
+                    alert("Đơn giá: 15.000đ");
+                    quantity = +prompt("Nhập số lượng:");
+                    sum = sum + quantity * 15000;
+                    alert("Thành tiền: " + sum);
+                    break;
+                case 4:
+                    alert("Đơn giá: 15.000đ");
+                    quantity = +prompt("Nhập số lượng:");
+                    sum = sum + quantity * 15000;
+                    alert("Thành tiền: " + sum);
+                    break;
+                case 5:
+                    alert("Đơn giá: 10.000đ");
+                    quantity = +prompt("Nhập số lượng:");
+                    sum = sum + quantity * 10000;
+                    alert("Thành tiền: " + sum);
+                    break;
+                case 6:
+                    alert("Đơn giá: 12.000đ");
+                    quantity = +prompt("Nhập số lượng:");
+                    sum = sum + quantity * 12000;
+                    alert("Thành tiền: " + sum);
+                    break;
+            }
+        } while (choose !== 7)
+        document.getElementById("price").innerHTML = "Tổng tiền cần thanh toán là: " + sum;
+    }
+</script>

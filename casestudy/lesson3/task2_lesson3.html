@@ -9,15 +9,56 @@
 </body>
 </html>
 <script>
-    let arrA = [7,2,5,3,5,3];
-    let arrB = [7,2,5,4,6,3,5,3];
-    let arrC = [];
+    let lenghtA = +prompt("Enter length of array A: ");
+    let arrA = [];
+    for (let i = 0; i < lenghtA; i++) {
+        let eleA = + prompt("Enter element of array A");
+        arrA.push(eleA);
+    }
 
-    for (let i = 0; i < arrB.length; i++) {
-        if (arrA.indexOf(arrB[i]) == -1) {
-            arrC.push(arrA[i])
+    let lenghtB = +prompt("Enter length of array B: ");
+    let arrB = [];
+    for (let i = 0; i < lenghtB; i++) {
+        let eleB = + prompt("Enter element of array B");
+        arrB.push(eleB);
+    }
+
+    let arrC = [];
+    if (lenghtB > lenghtA) {
+        for (let i = 0; i < lenghtB; i++) {
+            if (arrA.indexOf(arrB[i]) == -1) {
+                arrC.push(arrB[i]);
+            }
+        }
+    } else {
+        for (let i = 0; i < lenghtA; i++) {
+            if (arrB.indexOf(arrA[i]) == -1) {
+                arrC.push(arrA[i]);
+            }
         }
     }
-    alert(arrC)
+    console.log(arrC);
+
+    // let arrA = [7,2,5,3,5,3];
+    // let arrB = [7,2,5,4,6,3,5,3];
+    // let arrC = [];
+    //
+    // for (let i = 0; i < arrB.length; i++) {
+    //     if (arrA.indexOf(arrB[i]) == -1) {
+    //         arrC.push(arrB[i])
+    //     }
+    // }
+    // console.log(arrC)
+
+
+
+
+
+
+
+
+
+
+
 
 </script>

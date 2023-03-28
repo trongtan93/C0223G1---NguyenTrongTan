@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <p>MENU</p>
+    <p id = "menu" ></p>
+    
+    <button id="inputdrink" onclick="payDrink()">Enter</button>
+</form>
+
+</body>
+</html>
+<script>
+    let arrDrink = ["coffee", "orange", "carrot", "tomato", "water", "cocount water", "exit"];
+    let priceDrink = [12000, 15000, 17000, 20000, 10000, 14000,0]
+
+    function chooseDrink() {
+        let tableString = "<table border=\"1\">\n" +
+            "<tr>\n" +
+            "<th>ordinal</th>\n" +
+            "<th>name drink</th>\n" +
+            "<th>price</th>\n" +
+            "</tr>"
+        for (let i = 0; i < arrDrink.length; i++) {
+            tableString += "<tr>\n" +
+                "<td>" + (i+1) + "</td>\n" +
+                "<td>" + arrDrink[i] + "</td>\n" +
+                "<td>" + priceDrink[i] + "</td>\n" +
+                "</tr>"
+        }
+        tableString += "</table>"
+        document.getElementById("menu").innerHTML = tableString;
+    }
+    chooseDrink()
+    
+    function payDrink() {
+        let result = 0;
+        let num1 = "1"
+        let num2 = "2"
+        let num3 = "3"
+        let num4 = "4"
+        let num5 = "5"
+        let num6 = "6"
+        let num7 = "7"
+
+        switch (chooseDrink) {
+            case num1:
+                result = result + quantity * priceDrink[0];
+                alert(result)
+                do {
+                    var chooseDrink = +prompt("Please choose Drink with ordinal: ");
+                    var quantity = +prompt("Enter your quantity: ")
+                } while (chooseDrink == num7)
+                break;
+            case num2:
+                result = result + quantity * priceDrink[1];
+                alert(result)
+                do {
+                    var chooseDrink = +prompt("Please choose Drink with ordinal: ");
+                    var quantity = +prompt("Enter your quantity: ")
+                } while (chooseDrink == num7)
+                break;
+            case num3:
+                result = result + quantity * priceDrink[2];
+                alert(result)
+                do {
+                    var chooseDrink = +prompt("Please choose Drink with ordinal: ");
+                    var quantity = +prompt("Enter your quantity: ")
+                } while (chooseDrink == num7)
+                break;
+            case num4:
+                result = result + quantity * priceDrink[3];
+                alert(result)
+                do {
+                    var chooseDrink = +prompt("Please choose Drink with ordinal: ");
+                    var quantity = +prompt("Enter your quantity: ")
+                } while (chooseDrink == num7)
+                break;
+            case num5:
+                result = result + quantity * priceDrink[4];
+                alert(result)
+                do {
+                    var chooseDrink = +prompt("Please choose Drink with ordinal: ");
+                    var quantity = +prompt("Enter your quantity: ")
+                } while (chooseDrink == num7)
+                break;
+            case num6:
+                result = result + quantity * priceDrink[num5];
+                alert(result)
+                do {
+                    var chooseDrink = +prompt("Please choose Drink with ordinal: ");
+                    var quantity = +prompt("Enter your quantity: ")
+                } while (chooseDrink == num7)
+                break;
+            case num7:
+                break
+        }
+        document.getElementById("inputdrink").innerHTML = result
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
