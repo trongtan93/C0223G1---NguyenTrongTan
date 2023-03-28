@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task3</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+
+    let lengthA = +prompt("Enter length array A: ");
+    let arrA = [];
+    let ele;
+
+    for (let i = 0; i < lengthA; i++) {
+        ele = +prompt("Enter elements in array A: ");
+        arrA.push(ele);
+    }
+    alert(isArrayPrime())
+
+    function isPrime(n) {
+        if (n < 1) {
+            return false;
+        } else if (n === 1) {
+            return true;
+        } else {
+            for (let i = 2; i <= Math.sqrt(n); i++) {
+                if (n % i === 0) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    function isArrayPrime() {
+        for (let i = 0; i < lengthA; i++) {
+            if (isPrime(arrA[i]) === false) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+</script>

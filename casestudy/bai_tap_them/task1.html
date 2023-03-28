@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task1</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let lengthA = +prompt("Enter length array A: ");
+    let arrA = [];
+    let evenCount = 0;
+    let oddCount = 0;
+    for (let i = 0; i < lengthA; i++) {
+        let ele = +prompt("Enter elements in array A: ");
+        arrA.push(ele);
+    }
+    alert(check());
+
+    function check() {
+        for (let i = 0; i < lengthA; i++) {
+            if (arrA[i] % 2 == 0) {
+                evenCount = evenCount + 1;
+            } else {
+                oddCount = oddCount + 1;
+            }
+        }
+        if (evenCount == 0) {
+            result = 0;
+        } else if (oddCount == 0) {
+            result = 1;
+        } else {
+            result = -1;
+        }
+        return result;
+    }
+</script>
